@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Vasquez | Selected Works</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --hover-scale: 1.03;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Centered Header Layout */
+        header {
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 3.5rem;
+            margin-top: 2rem;
+        }
+
+        .eyebrow {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.75rem;
+            background: linear-gradient(to right, #f8fafc, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Portfolio Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 4rem;
+        }
+
+        /* Card Styling */
+        .portfolio-card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 220px;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px) scale(var(--hover-scale));
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.1);
+        }
+
+        .card-content h2 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .card-content p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .card-link-arrow {
+            align-self: flex-end;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+
+        .portfolio-card:hover .card-link-arrow {
+            transform: translateX(4px);
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="eyebrow">Gabriel Vasquez</span>
+        <h1>Porfolio</h1>
+        <p>A central collection of specialized projects, environments, and tracking dashboards.</p>
+    </header>
+
+    <main class="grid-container">
+        <!-- Tennis Portfolio Card -->
+        <a href="https://99matterr.github.io/Tennis-portfolio/index.html" class="portfolio-card" target="_blank">
+            <div class="card-content">
+                <h2>Tennis Portfolio</h2>
+                <p>Articles, player development methodologies, and training insights on modern tennis progression.</p>
+            </div>
+            <div class="card-link-arrow">&rarr;</div>
+        </a>
+
+        <!-- Trading Portfolio Card -->
+        <a href="#" class="portfolio-card">
+            <div class="card-content">
+                <h2>Macro & Trading Hub</h2>
+                <p>Analysis of global economic indicators, currency pair breakdowns, and market execution strategies.</p>
+            </div>
+            <div class="card-link-arrow">&rarr;</div>
+        </a>
+
+        <!-- Websites Portfolio Card -->
+        <a href="#" class="portfolio-card">
+            <div class="card-content">
+                <h2>Web Development</h2>
+                <p>A showcase of clean UI/UX code architectures, script automation, and web applications.</p>
+            </div>
+            <div class="card-link-arrow">&rarr;</div>
+        </a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Built with clean code & purpose.</p>
+    </footer>
+
+</body>
+</html>
